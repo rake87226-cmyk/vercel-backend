@@ -3,13 +3,21 @@
   "builds": [
     {
       "src": "server.js",
+      "src": "sms.js",
+      "src": "email.js",
+      "src": "db.js",
+      "src": "init_db.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "server.js"
+      "dest": "server.js",
+      "dest": "sms.js",
+      "dest": "email.js",
+      "dest": "db.js",
+      "dest": "init_db.js"
     }
   ]
 }
